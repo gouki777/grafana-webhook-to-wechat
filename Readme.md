@@ -13,7 +13,7 @@ go build main.go
 
 ![](/image/01.png)
 
-https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=`xxxx-xxx-xxx-xxx-xxxx`
+for example: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=`xxxx-xxx-xxx-xxx-xxxx`
 
 #### Alerting Grafana
 
