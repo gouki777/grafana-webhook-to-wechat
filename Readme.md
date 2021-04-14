@@ -1,22 +1,19 @@
-# grafana webhook to wechat [重构-练手项目]   
+# grafana webhook to wechat [practice]   
   
 
 
-功能：grafana webhook 通过企业微信的Bot机器人 发送报警通知
+function：grafana webhook Alarm notification is sent through the BOT robot of enterprise WeChat
 
 #### Go run
 <pre>
 go build main.go  
-
-[GIN-debug] Listening and serving HTTP on :8081  
-
 </pre>
 
-#### 创建企业微信bot
+#### Get webchat-bot key
 
 ![](/image/01.png)
 
-例如： https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=`xxxx-xxx-xxx-xxx-xxxx`
+https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=`xxxx-xxx-xxx-xxx-xxxx`
 
 #### Alerting Grafana
 
@@ -32,7 +29,7 @@ go build main.go
 127.0.0.1 - [Wed, 14 Apr 2021 16:04:12 CST] "POST /eXXX-XXX-XXX-XXX HTTP/1.1 200 28.3171ms "Grafana" "
 </pre>
 
-参考项目：https://github.com/n0vad3v/g2ww  
+reference：https://github.com/n0vad3v/g2ww  
 
 
 
