@@ -59,7 +59,7 @@ func main() {
 	r.Use(gin.Recovery())
 	// default logs 日志格式
 	r.Use(gin.LoggerWithFormatter(func(param gin.LogFormatterParams) string {
-		return fmt.Sprintf("[%s] - %s %s %s %s %d %s %s %s \"\n",
+		return fmt.Sprintf("[%s] - %s %s %s %s %d %s %s %s \n",
 			param.TimeStamp.Format(time.RFC1123),
 			param.ClientIP,
 			param.Method,
