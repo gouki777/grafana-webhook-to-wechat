@@ -75,7 +75,6 @@ func main() {
 	r.POST("/:wechatkey", func(c *gin.Context) {
 		json := new(Grafanawebhook)
 		if err := c.ShouldBindJSON(json); err != nil {
-			fmt.Printf("message: %s\n", err)
 			c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 			return
 		}
